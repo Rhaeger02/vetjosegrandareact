@@ -1,0 +1,104 @@
+/* SERVICES SECTION */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 20px;
+    background-color: #febf10;
+}
+
+/* INDIVIDUAL SERVICES */
+.service {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 400px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 22px;
+    color: #747474;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    margin: 0;
+    color: #0cc0ca;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE DESIGN - MOBILE */
+@media only screen and (max-width: 1024px) {
+    .service {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* SERVICES MOBILE */
+    .services {
+        padding: 50px 15px;
+        gap: 25px;
+    }
+    
+    .service {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .service h2 {
+        font-size: 20px;
+        min-height: 50px;
+    }
+    
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* SERVICES MOBILE */
+    .services {
+        padding: 40px 10px;
+        gap: 20px;
+    }
+    
+    .service {
+        padding: 15px;
+    }
+    
+    .service img {
+        height: 180px;
+    }
+    
+    .service h2 {
+        font-size: 18px;
+        min-height: 45px;
+    }
+}

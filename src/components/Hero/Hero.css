@@ -1,0 +1,111 @@
+/* HERO SECTION */
+.hero {
+    background-image: url("/img/background.jpeg");
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.hero-box {
+    background: rgba(0, 255, 255, 0.4);
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    animation: entryUp 1.5s ease-out forwards;
+    max-width: 800px;
+    margin: 0 20px;
+}
+
+.hero-box h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+@keyframes entryUp {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* BUTTON */
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #00d1d1;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+.boton:hover {
+    background-color: #ffffff;
+    color: #00d1d1;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE DESIGN - MOBILE */
+@media only screen and (max-width: 1024px) {
+    .hero-box h1 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* HERO MOBILE */
+    .hero {
+        background-position: 18% center;
+        height: 80vh;
+    }
+    
+    .hero-box {
+        padding: 20px 25px;
+        margin: 0 15px;
+    }
+    
+    .hero-box h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .boton {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* HERO MOBILE */
+    .hero-box h1 {
+        font-size: 24px;
+    }
+    
+    .boton {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
