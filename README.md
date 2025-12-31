@@ -14,10 +14,10 @@ Sitio web oficial de la Veterinaria José Granda construido con React.
 
 1. Clonar el repositorio
 2. Instalar dependencias:
-```bash
+bash
     npm install
 3. Correr el proyecto:
-```bash
+bash
     npm run dev
 
 # ENGLISH
@@ -32,12 +32,12 @@ Official website for the José Granda Veterinary Clinic, built using React.
 - Google Maps integration to easily locate the clinic.
 - Social media links for direct communication.
 
-## Instalación
+## Instalation
 
 1. Clone the repository
 2. Install dependencies:
-```bash
+bash
     npm install
 3. Run the project:
-```bash
+bash
     npm run dev
